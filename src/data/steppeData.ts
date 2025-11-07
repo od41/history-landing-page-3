@@ -1,4 +1,4 @@
-import { SteppeData } from '../types';
+import type { SteppeData } from '../types';
 
 export const steppeData: SteppeData = {
   hero: {
@@ -19,7 +19,8 @@ export const steppeData: SteppeData = {
     { id: 'nav-artifacts', label: 'Artifacts', href: '#artifacts' },
     { id: 'nav-sites', label: 'Sites', href: '#sites' },
     { id: 'nav-timeline', label: 'Timeline', href: '#timeline' },
-    { id: 'nav-exchanges', label: 'Cultural Exchange', href: '#exchanges' }
+    { id: 'nav-exchanges', label: 'Cultural Exchange', href: '#exchanges' },
+    { id: 'nav-legacy', label: 'Modern Legacy', href: '#legacy' }
   ],
   wayOfLife: [
     {

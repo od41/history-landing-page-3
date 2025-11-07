@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavigationHeader } from './components/NavigationHeader';
 import { HeroSection } from './components/sections/HeroSection';
 import { WayOfLifeSection } from './components/sections/WayOfLifeSection';
