@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeroContent } from '../../types';
+import type { HeroContent } from '../../types';
 
 interface HeroSectionProps {
   heroContent: HeroContent;
@@ -11,7 +11,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   className = ''
 }) => {
   const scrollToNext = (): void => {
-    const nextSection = document.getElementById('peoples');
+    const nextSection = document.getElementById('wayoflife');
     if (nextSection) {
       const headerOffset = 80;
       const elementPosition = nextSection.offsetTop - headerOffset;

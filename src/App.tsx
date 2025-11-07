@@ -1,20 +1,27 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import { NavigationHeader } from './components/NavigationHeader';
+import { HeroSection } from './components/sections/HeroSection';
+import { WayOfLifeSection } from './components/sections/WayOfLifeSection';
+import { InnovationsSection } from './components/sections/InnovationsSection';
+import { ModernLegacySection } from './components/sections/ModernLegacySection';
+import { steppeData } from './data/steppeData';
+import './App.css';
 
 function App() {
-
   return (
-    <>
-      <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-2xl font-bold">
-          Your canvas is ready
-        </h1>
-        <h2 className="text-lg text-gray-500">
-          Start building your project!
-        </h2>
-      </div>
-    </>
-  )
+    <div className="min-h-screen bg-amber-50">
+      <NavigationHeader 
+        navigationItems={steppeData.navigation}
+      />
+      
+      <main className="relative">
+        <HeroSection heroContent={steppeData.hero} />
+        <WayOfLifeSection wayOfLifeData={steppeData.wayOfLife} />
+        <InnovationsSection innovations={steppeData.culturalInnovations} />
+        <ModernLegacySection />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;

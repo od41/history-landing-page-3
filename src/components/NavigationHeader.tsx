@@ -1,6 +1,6 @@
 import React from 'react';
 import { useScrollSpy } from '../hooks/useScrollSpy';
-import { NavigationItem } from '../types';
+import type { NavigationItem } from '../types';
 
 interface NavigationHeaderProps {
   navigationItems: NavigationItem[];
