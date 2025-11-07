@@ -62,6 +62,29 @@ export interface NavigationItem {
   isActive?: boolean;
 }
 
+export interface WayOfLifeTab {
+  id: string;
+  title: string;
+  description: string;
+  content: string[];
+  imageUrl: string;
+  icon: string;
+}
+
+export interface CulturalInnovation {
+  id: string;
+  title: string;
+  shortDescription: string;
+  detailedContent: {
+    overview: string;
+    techniques: string[];
+    significance: string;
+    timeline: string;
+  };
+  imageUrl: string;
+  icon: string;
+}
+
 export interface SteppeData {
   hero: HeroContent;
   navigation: NavigationItem[];
@@ -70,6 +93,8 @@ export interface SteppeData {
   sites: ArchaeologicalSite[];
   culturalExchanges: CulturalExchange[];
   timeline: TimelineEvent[];
+  wayOfLife: WayOfLifeTab[];
+  culturalInnovations: CulturalInnovation[];
 }
 
 export interface TimelineEvent {
